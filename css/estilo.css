@@ -1,0 +1,100 @@
+/*Tags gerais*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    color: black;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+:root {
+    --primary: #2c74e2;
+}
+
+header {
+    height: 15rem;
+
+}
+
+a {
+    color: rgb(255, 255, 255);
+}
+
+a:visited {
+    color: rgb(255, 255, 255);
+}
+
+#titulo {
+    height: 60%;
+    text-align: center;
+    background-image: url(../img/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+h1 {
+    color: white;
+}
+
+main {
+    min-height: calc(100vh - 20rem);
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ol,
+ul {
+    /*Para bullet não sair do enquadramento*/
+    width: 90%;
+    margin: auto;
+}
+
+
+
+footer {
+    background-color: var(--primary);
+    height: 5rem;
+    text-align: center;
+}
+
+table{
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+thead, tfoot{
+    font-weight: bolder;
+}
+tbody{
+    text-align: center;
+}
+table tr th,
+table tr td {
+    border: 0.1rem solid BLACK;
+    padding: 0.1rem;
+
+}
+.no-center-table{
+    text-align: left;
+}
+#center-main {
+    width: 100%;
+    height: 90%;
+}
+.bolder-table{
+    font-weight: bolder;
+}
