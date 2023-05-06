@@ -4,7 +4,7 @@
 #menu {
     width: 100%;
     background-color: var(--primary);
-    height: 40%;
+    height: 30%;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -16,20 +16,28 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 100%;
+    
     
 }
 
 #menu ul li {
     display: inline-block;
     font-size: 1.7rem;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transition: background-color 0.3s;
 }
 #menu ul li a{
     text-decoration: none;
 }
-
-#menu ul li:hover a{
-    text-decoration: underline;
+#menu ul li:hover{
+    background-color: var(--hover);
 }
+
 
 /*Menu responsivo*/
 input#checkmenu{
@@ -90,7 +98,9 @@ input#checkmenu{
         transition: right 3s;
         
     }
-    
+    #labelmenu{
+        display: block;
+    }
     /*para que a ul, escondida à direita, apareça*/
     @keyframes appear {
         100%{
