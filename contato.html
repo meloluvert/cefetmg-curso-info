@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contato</title>
     <link rel="stylesheet" href="css/estilo.css">
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/responsivo.css">
     <link rel="shortcut icon" href="img/chip.svg" type="image/x-icon">
 </head>
 
@@ -39,13 +41,13 @@
                     <legend>Contato</legend>
 
                     <!-- Informações Básicas -->
-                    <label for="name" required>Nome:</label>
+                    <label for="name">Nome:</label>
                     <input type="text" name="name" id="name" placeholder="João"><br>
                     <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" placeholder="name@email"> <br>
+                    <input type="email" name="email" id="email" placeholder="name@email" required> <br>
 
                     <!-- Informação do sexo: -->
-                    <input type="radio" name="sex" id="sexoM" value="M">
+                    <input type="radio" name="sex" id="sexoM" value="M" required>
                     <label for="sexoM">Masculino</label>
                     <input type="radio" name="sex" id="sexoF" value="F">
                     <label for="sexoF">Feminino</label>
@@ -90,11 +92,11 @@
                     <input type="file" name="file" id="arq">
                     <br>
                     <label for="sug">Sugestão</label> <br>
-                    <textarea name="sug" id="sug" cols="30" rows="10"></textarea>
+                    <textarea name="sug" id="sug" cols="30" rows="10" required></textarea>
 
                     <br>
-                    <button type="submit">Enviar</button>
-                    <button type="reset">Limpar</button>
+                    <button type="submit"> <span>Enviar</span> </button>
+                    <button type="reset"><span>Limpar</span></button>
                 </fieldset>
             </form>
         </div>
