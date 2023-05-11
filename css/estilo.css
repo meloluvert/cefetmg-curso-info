@@ -73,6 +73,10 @@ ul {
     /*Para bullet não sair do enquadramento*/
     width: 90%;
     margin: auto;
+    
+}
+ol{
+    list-style-type: upper-roman;
 }
 
 /*Tabela*/
