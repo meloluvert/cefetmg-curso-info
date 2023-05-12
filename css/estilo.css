@@ -78,7 +78,9 @@ ul {
 ol{
     list-style-type: upper-roman;
 }
-
+ul{
+    list-style-type: square;
+}
 /*Tabela*/
 table {
     width: 100%;
@@ -86,7 +88,6 @@ table {
     border-collapse: collapse;
     text-align: center;
 }
-
 thead,
 tfoot {
     font-weight: bolder;
@@ -118,8 +119,12 @@ form button {
     height: 5rem;
     width: 5rem;
     border-radius: 50%;
-    border: 0;
+    border:0;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 
+}
+form button:active{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 
 form textarea {
@@ -159,6 +164,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 
@@ -173,4 +179,41 @@ footer {
 
 .bolder-table {
     font-weight: bolder;
+}
+
+/*faq*/
+#faq{
+    overflow: hidden;
+}
+#faq section a{
+    color: #000;
+}
+#faq section{
+    padding-top: 10rem;
+}
+#faq main{
+    flex-wrap: wrap;
+    height: auto;
+    padding-top: 10rem;
+
+}
+#faq header{
+    position: fixed;
+    top:0;
+    width: 100%;
+}
+#faq footer{
+    position: fixed;
+    bottom:0;
+}
+
+#faq main section.resposta-faq{
+    width: 100%;
+    height: var(--altura-main);
+    padding-top: 10rem;
+    
+}
+#faq #perguntas{
+    height: var(--altura-main);
+    margin-top: 0;
 }
