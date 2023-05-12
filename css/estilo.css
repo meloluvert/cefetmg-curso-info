@@ -11,6 +11,7 @@
 body {
     font-size: 1.5rem;
     text-align: justify;
+    overflow-x: hidden;
 }
 
 :root {
@@ -120,12 +121,12 @@ form button {
     width: 5rem;
     border-radius: 50%;
     border:0;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition: box-shadow, 0.3s;
 
 }
-form button:active{
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-}
+
 
 form textarea {
     resize: none;
@@ -141,6 +142,8 @@ form textarea {
 
 form button:hover {
     background-color: var(--hover);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    
 }
 
 form button span {
