@@ -216,4 +216,8 @@ footer {
 #faq #perguntas{
     height: var(--altura-main);
     margin-top: 0;
+    width: 100%;
+}
+#faq #center-main{
+    padding-left: 1%;
 }
