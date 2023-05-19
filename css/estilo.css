@@ -13,7 +13,20 @@ body {
     text-align: justify;
     overflow-x: hidden;
 }
-
+body::-webkit-scrollbar{
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: var(--primary);
+    background-color: #2c75e270;
+    
+}
+body::-webkit-scrollbar-track{
+    background: rgba(230, 207, 207, 0.548);
+}
+body::-webkit-scrollbar-thumb:hover{
+    background-color: var(--hover);
+}
 :root {
     --primary: #2c74e2;
     --hover: rgb(33, 85, 163);
